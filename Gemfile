@@ -25,7 +25,8 @@ else
   raise "Don't know what gem to use for adapter #{adapter}"
 end
 
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
+source 'http://ruby.taobao.org/'
 
 gem 'rails', '~> 3.2.14'
 gem 'require_relative'
