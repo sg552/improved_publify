@@ -26,45 +26,12 @@ class Admin::DashboardController < Admin::BaseController
     @drafts = Article.drafts.where("user_id = ?", current_user.id).limit(5)
 
     @statspam = Comment.spam.count
-    @inbound_links = inbound_links
-    @publify_links = publify_dev
-    publify_version
+    @inbound_links = [] # inbound_links
+    @publify_links = nil
   end
 
-  def publify_version
-    publify_version = nil
-    version = PUBLIFY_VERSION.to_s.split('.')
-    begin
-      url = "http://blog.publify.co/version.txt"
-      open(url) do |http|
-        publify_version = http.read[0..5]
-        version = publify_version.split('.')
-      end
-    rescue
-    end
-
-    if version[0].to_i > TYPO_MAJOR.to_i
-      gflash :error
-    elsif version[1].to_i > TYPO_SUB.to_i
-      gflash :warning
-    elsif version[2].to_i > TYPO_MINOR.to_i
-      gflash :notice
-    end
-  end
 
   private
-
-  def inbound_links
-    host = URI.parse(this_blog.base_url).host
-    return [] if Rails.env.development?
-    url = "http://www.google.com/search?q=links:#{host}&tbm=blg&output=rss"
-    parse(url).reverse.compact
-  end
-
-  def publify_dev
-    url = "http://blog.publify.co/articles.rss"
-    parse(url)[0..2]
-  end
 
   def parse(url)
     open(url) do |http|

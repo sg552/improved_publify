@@ -30,6 +30,7 @@ class ContentController < ApplicationController
   end
 
   def theme_layout
+    puts "== this_blog.current_theme: #{this_blog.current_theme.inspect}"
     this_blog.current_theme.layout(self.action_name)
   end
 end
