@@ -33,10 +33,10 @@ function edButton(id, display, tagStart, tagEnd, access, open) {
 function get_buttons(textfilter) {
   switch (textfilter) {
   case "textile":
+      edButtons.push(new edButton('ed_img', '图片(image)', '!', '!', 'm' ,-1));
+      edButtons.push(new edButton('ed_link', '链接(link)', '', '</a>', 'a'));
       edButtons.push(new edButton('ed_bold', 'b', '**', '**', 'b'));
       edButtons.push(new edButton('ed_italic', 'i', '_', '_', 'i'));
-      edButtons.push(new edButton('ed_link', 'link', '', '</a>', 'a'));
-      edButtons.push(new edButton('ed_img', 'img', '!', '!', 'm' ,-1));
       edButtons.push(new edButton('ed_li', 'li', '* ', '', 'l', -1));
       edButtons.push(new edButton('ed_block', 'b-quote', '>', '', 'q', -1));
       edButtons.push(new edButton('ed_del', 'del', '<del>', '</del>'));
@@ -44,13 +44,13 @@ function get_buttons(textfilter) {
       edButtons.push(new edButton('ed_more', 'more', '\n<!--more-->\n', '', ''));
       edButtons.push(new edButton('ed_publifycode', 'publify:code', '', '\n</publify:code>\n\n', 'publify:code'));
       break;
-      
+
   case "markdown":
   case "markdown smartypants":
+      edButtons.push(new edButton('ed_img', '图片(image)', '', '', 'm' ,-1));
+      edButtons.push(new edButton('ed_link', '链接(link)', '', '</a>', 'a'));
       edButtons.push(new edButton('ed_bold', 'b', '**', '**', 'b'));
       edButtons.push(new edButton('ed_italic', 'i', '_', '_', 'i'));
-      edButtons.push(new edButton('ed_link', 'link', '', '</a>', 'a'));
-      edButtons.push(new edButton('ed_img', 'img', '', '', 'm' ,-1));
       edButtons.push(new edButton('ed_li', 'li', '* ', '', 'l', -1));
       edButtons.push(new edButton('ed_ol', 'ol', '#', '', 'o', -1));
       edButtons.push(new edButton('ed_block', 'b-quote', '>', '', 'q', -1));
@@ -61,10 +61,10 @@ function get_buttons(textfilter) {
       break;
 
   default:
+      edButtons.push(new edButton('ed_img', '图片(image)', '', '', 'm' ,-1));
+      edButtons.push(new edButton('ed_link', '链接(link)', '', '</a>', 'a'));
       edButtons.push(new edButton('ed_bold', 'b', '<strong>', '</strong>', 'b'));
       edButtons.push(new edButton('ed_italic', 'i', '<em>', '</em>', 'i'));
-      edButtons.push(new edButton('ed_link', 'link', '', '</a>', 'a'));
-      edButtons.push(new edButton('ed_img', 'img', '', '', 'm' ,-1));
       edButtons.push(new edButton('ed_ul', 'ul', '<ul>\n', '</ul>\n\n', 'u'));
       edButtons.push(new edButton('ed_ol', 'ol', '<ol>\n', '</ol>\n\n', 'o'));
       edButtons.push(new edButton('ed_li', 'li', '\t<li>', '</li>\n', 'l'));
@@ -75,7 +75,7 @@ function get_buttons(textfilter) {
       edButtons.push(new edButton('ed_publifycode', 'publify:code', '', '\n</publify:code>\n\n', 'publify:code'));
       break;
   }
-  
+
 
 }
 
@@ -210,16 +210,16 @@ function edSpell(which) {
 
 function edToolbar(which, textfilter) {
   get_buttons(textfilter);
-        
+
 	document.write('<div id="ed_toolbar_' + which + '" class="btn-toolbar"><div class="btn-group-vertical">');
 	for (i = 0; i < extendedStart; i++) {
 		edShowButton(which, edButtons[i], i);
 	}
-  
+
 	for (i = extendedStart; i < edButtons.length; i++) {
 		edShowButton(which, edButtons[i], i);
 	}
-  
+
 	if (edShowExtraCookie()) {
 		document.write(
 			'<input type="button" id="ed_close_' + which + '" class="btn btn-default" onclick="edCloseAllTags(\'' + which + '\');" value="Close Tags" />'
@@ -375,11 +375,11 @@ function edInsertPublifyCode(which, i, defaultValue) {
 
 function edInsertImage(which) {
     myField = document.getElementById(which);
-	var myValue = prompt('Enter the URL of the image', 'http://');
+	var myValue = prompt('请输入图片的URL', 'http://');
 	if (myValue && myValue.length > 0) {
 		myValue = '<img src="'
 				+ myValue
-				+ '" alt="' + prompt('Enter a description of the image', '')
+				+ '" alt="' + prompt('请输入对于该图片的描述', '')
 				+ '" />';
 		edInsertContent(which, myValue);
 	}

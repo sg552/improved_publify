@@ -710,8 +710,8 @@ zh-CN:
     pt_BR: "Portuguese (Brazilian)"
   time:
     formats:
-      default: "%m/%d/%Y %H:%M"
-      short: "%m/%d/%y"
+      default: "%Y-%m-%d %H:%M"
+      short: "%Y-%m-%d"
       letters_month_with_year: "%m %Y"
   date:
     month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
@@ -722,5 +722,6 @@ zh-CN:
   Design: 设计
   Settings: 设置
   SEO: 搜索优化
+  preview: 预览
 
 
