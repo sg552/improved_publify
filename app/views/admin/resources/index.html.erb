@@ -1,18 +1,21 @@
 <%- content_for :page_heading do %>
   <h2>
     <i class="glyphicon glyphicon-large glyphicon-picture"></i>
-    <%= t(".media_library") %>
+    上传附件(图片，视频，PPT等)
   </h2>
 <% end %>
+<div class='alert alert-info'>
+  <p> 使用方法：右键点击对应的链接(例如：中等尺寸)，在弹出的菜单中选择“复制链接地址”，最后把它粘贴到正文的 img标签中 </p>
+</div>
 
 <%= form_tag({action: 'upload'}, {enctype: "multipart/form-data", class: 'form-inline'}) do %>
   <div class='well well-small'>
-    <h3><%= t('.upload_a_file_to_your_site') %></h3>
+    <h3>请选择要上传的文件</h3>
     <div class="form-group">
       <%= file_field('upload', 'filename', {class: 'input-file'}) -%>
     </div>
     <div class="form-group">
-      <%= submit_tag(t('.upload'), {class: 'btn btn-success'}) -%>
+      <%= submit_tag( '上传', {class: 'btn btn-success'}) -%>
     </div>
   </div>
 <%- end %>
@@ -20,10 +23,10 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th><%= t(".filename")%> <small>(<%= t('.right_click_for_link')%>)</small></th>
-      <th><%= t(".content_type")%></th>
-      <th><%= t(".file_size")%></th>
-      <th><%= t(".date")%></th>
+      <th>附件</th>
+      <th>类型</th>
+      <th>附件大小</th>
+      <th>上传的日期</th>
     </tr>
   </thead>
   <%- if @resources.empty? %>
@@ -47,14 +50,15 @@
         <p>
         <small>
           <%- if upload.mime =~ /image/ %>
-            <%= link_to(t(".thumbnail"), upload.upload.thumb.url) %>
-          |
-          <%= link_to(t(".medium_size"), upload.upload.medium.url) %>
-          |
-          <%= link_to(t(".original_size"), upload.upload.url) %>
-          |
+            <%= link_to('缩略图', upload.upload.thumb.url) %>
+          &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+          <%= link_to('中等尺寸', upload.upload.medium.url) %>
+          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <%= link_to('原始尺寸', upload.upload.url) %>
+          &nbsp;&nbsp;&nbsp;|
         <%- end %>
-          <%= link_to(t(".delete"), { action: 'destroy', id: upload.id, search: params[:search], page: params[:page] },  confirm: t(".are_you_sure"), method: :post) %>
+          <%= link_to('删除', { action: 'destroy', id: upload.id, search: params[:search], page: params[:page] },
+                      confirm: t(".are_you_sure"), method: :post, :class => 'btn btn-danger') %>
         </small>
         </p>
       </td>
@@ -62,7 +66,7 @@
         <%= upload.mime %>
       </td>
       <td><%=h upload.size rescue 0 -%> bytes</td>
-      <td><%= format_date upload.created_at -%></td>
+      <td><%= format_date_time upload.created_at -%></td>
     </tr>
   <% end -%>
     <%= display_pagination(@resources, 6)%>

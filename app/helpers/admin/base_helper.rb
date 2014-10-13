@@ -62,11 +62,11 @@ module Admin::BaseHelper
   end
 
   def format_date(date)
-    date.strftime('%d/%m/%Y')
+    date.strftime('%Y-%m-%d')
   end
 
   def format_date_time(date)
-    date.strftime('%d/%m/%Y %H:%M')
+    date.strftime('%Y-%m-%d %H:%M')
   end
 
   def published_or_not(item)
