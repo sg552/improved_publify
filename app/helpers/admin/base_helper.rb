@@ -6,6 +6,7 @@ module Admin::BaseHelper
 
     menu_name = case current_module.menu_name
     when 'Media Library' then '上传附件(图片)'
+    when 'Notes' then '便签'
     else
       current_module.menu_name
     end
