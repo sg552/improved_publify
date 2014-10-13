@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- encoding : utf-8 -*-
 # Translation by Edgar J. Suarez
 Localization.define("pt_BR") do |l|
   l.store "no posts", "Sem posts"

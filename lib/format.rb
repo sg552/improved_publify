@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Format
 
   EMAIL = /^[_a-z0-9\+\.\-]+\@[_a-z0-9\-]+\.[_a-z0-9\.\-]+$/i

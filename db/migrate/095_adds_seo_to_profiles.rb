@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddsSeoToProfiles < ActiveRecord::Migration
   class Profile < ActiveRecord::Base
     include BareMigration

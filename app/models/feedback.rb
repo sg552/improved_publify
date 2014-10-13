@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require_dependency 'spam_protection'
 class Feedback < ActiveRecord::Base
   self.table_name = "feedback"

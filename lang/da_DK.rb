@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- encoding : utf-8 -*-
 Localization.define("da_DK") do |l|
   l.store "yes", "ja"
   l.store "no", "nej"

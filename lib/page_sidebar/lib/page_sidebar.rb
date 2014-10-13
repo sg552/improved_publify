@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class PageSidebar < Sidebar
   display_name "Page"
   description "Show pages for this blog"

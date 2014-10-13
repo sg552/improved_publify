@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Theme
   cattr_accessor :cache_theme_lookup
   @@cache_theme_lookup = false

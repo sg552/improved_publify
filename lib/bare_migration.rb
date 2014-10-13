@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # bare_migration.rb
 # Scott Bronson
 # 26 Jan 2006

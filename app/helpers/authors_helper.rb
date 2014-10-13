@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module AuthorsHelper
 
   def display_profile_item(item, item_desc)

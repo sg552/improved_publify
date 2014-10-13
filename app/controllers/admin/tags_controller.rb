@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::TagsController < Admin::BaseController
   cache_sweeper :blog_sweeper
 

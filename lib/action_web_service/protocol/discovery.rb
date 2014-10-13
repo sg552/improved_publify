@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActionWebService # :nodoc:
   module Protocol # :nodoc:
     module Discovery # :nodoc:

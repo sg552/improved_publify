@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Profile < ActiveRecord::Base
   serialize :modules
   validates_uniqueness_of :label

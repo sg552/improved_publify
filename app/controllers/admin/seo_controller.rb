@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::SeoController < Admin::BaseController
   cache_sweeper :blog_sweeper
   before_filter :set_setting, only: [:index, :titles]

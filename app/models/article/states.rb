@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Article::States
   class Base < Stateful::State
     alias_method :content, :model

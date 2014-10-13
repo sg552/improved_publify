@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- encoding : utf-8 -*-
 # localization Marcin Gil <marcin.gil@gmail.com>
 # additional localization Szymon (jeznet) Jeż <szymon@jez.net.pl>
 

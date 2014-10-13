@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module MetaWeblog::Structs
   class Article < ActionWebService::Struct
     member :description,        :string

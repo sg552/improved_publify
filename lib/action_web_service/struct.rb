@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActionWebService
   # To send structured types across the wire, derive from ActionWebService::Struct,
   # and use +member+ to declare structure members.

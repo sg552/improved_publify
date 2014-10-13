@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddRedirectionsModel < ActiveRecord::Migration
   class Redirect < ActiveRecord::Base
     has_many :redirections

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #!/usr/bin/env ruby
 
 # RSS 0.2/2.0/Atom converter to publify by Lennon Day-Reynolds <rcoder@gmail.com>

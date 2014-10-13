@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- encoding : utf-8 -*-
 Localization.define("zh_CN") do |l|
   l.store "Posted in", "发表在"
   l.store "no posts", "没有文章"

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #!/usr/bin/env ruby
 
 # Serendipity (S9Y) 0.8.x converter for publify by Jochen Schalanda <jochen@schalanda.de>

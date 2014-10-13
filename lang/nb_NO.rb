@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- encoding : utf-8 -*-
 Localization.define("nb_NO") do |l|
   l.store "Unclassified", "Uklassifisert"
   l.store "Just Presumed Ham", "Kun antatt Ham"

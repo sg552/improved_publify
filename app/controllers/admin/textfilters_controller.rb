@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::TextfiltersController < Admin::BaseController
   def macro_help
     @macro = TextFilter.available_filters.find { |filter| filter.short_name == params[:id] }

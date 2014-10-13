@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module XmlHelper
   def collection_lastmod(collection)
     article_updated = collection.articles.find(:first, :order => 'updated_at DESC')

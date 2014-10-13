@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #remove_const "Flickr"
 
 class FlickRaw::Flickr

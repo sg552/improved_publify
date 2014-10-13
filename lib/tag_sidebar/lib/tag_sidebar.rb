@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class TagSidebar < Sidebar
   display_name "Tags"
   description "Show most popular tags for this blog"

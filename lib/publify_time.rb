@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class PublifyTime
   def self.delta(year = nil, month = nil, day = nil)
     return nil if year.nil? && month.nil? && day.nil?

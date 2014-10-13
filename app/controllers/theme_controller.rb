@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class ThemeController < ContentController
 
   def stylesheets

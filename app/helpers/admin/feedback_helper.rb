@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::FeedbackHelper
   def comment_class state
     return 'label-info' if state.to_s.downcase == 'ham?'

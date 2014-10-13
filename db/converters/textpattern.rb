@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #!/usr/bin/env ruby
 
 # TextPattern 1.x converter for publify by Patrick Lenz <patrick@lenz.sh>

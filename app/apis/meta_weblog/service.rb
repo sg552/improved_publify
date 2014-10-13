@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class MetaWeblog::Service < PublifyWebService
   web_service_api MetaWeblog::Api
   before_invocation :authenticate

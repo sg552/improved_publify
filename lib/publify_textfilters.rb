@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'publify_plugins'
 require 'text_filter_plugin'
 

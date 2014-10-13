@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ConfigManager
   def self.append_features(base)
     super

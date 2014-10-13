@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Localization.define("es_MX") do |l|
   l.store "Edit", "Editar"
   l.store "yes", "s&iacute;"

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Robot
 
   FILE = "#{::Rails.root.to_s}/public/robots.txt"

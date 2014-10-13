@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class PopularSidebar < Sidebar
   description 'Displays the most popular posts'
   setting :title, 'Most popular'

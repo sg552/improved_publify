@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class SpamProtection
 
   IP_RBLS = [ 'opm.blitzed.us', 'bsb.empty.us' ]

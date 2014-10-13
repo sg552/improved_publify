@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::DashboardHelper
   def dashboard_action_links
     links = []

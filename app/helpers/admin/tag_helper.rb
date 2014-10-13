@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::TagHelper
   def show_tag_actions item
     content_tag(:div, {:class => 'action'}) do

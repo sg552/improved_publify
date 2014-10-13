@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class SplitsContentRulesArticlesPages < ActiveRecord::Migration
   class Profile < ActiveRecord::Base
     include BareMigration

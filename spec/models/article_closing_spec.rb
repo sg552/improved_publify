@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'spec_helper'
 
 describe "CommentClosing from Test::Unit; no I don't know why it's in article_closing_spec.rb" do

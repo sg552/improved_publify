@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'fog'
 
 class Admin::ResourcesController < Admin::BaseController

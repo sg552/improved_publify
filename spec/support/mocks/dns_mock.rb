@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class IPSocket
   def self.getaddress(host)
     case host

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddsResourcesUpload < ActiveRecord::Migration
   class Resource < ActiveRecord::Base
   end

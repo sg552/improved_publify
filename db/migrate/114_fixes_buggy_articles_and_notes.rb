@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class FixesBuggyArticlesAndNotes < ActiveRecord::Migration  
   def self.up
     say "Fixing contents permalinks, this may take some time"

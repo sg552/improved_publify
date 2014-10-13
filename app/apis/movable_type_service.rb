@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module MovableTypeStructs
   class ArticleTitle < ActionWebService::Struct
     member :dateCreated,  :time

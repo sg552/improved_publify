@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Rails.application.routes.draw do
   # Load plugin routes first. A little bit ugly, but I didn't find any better way to do it
   # We consider that only publify_* plugins are concerned

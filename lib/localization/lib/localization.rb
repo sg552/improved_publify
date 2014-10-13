@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Localization
   mattr_accessor :lang
 

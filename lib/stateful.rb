@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Stateful
   class State
     def initialize(model)

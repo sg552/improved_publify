@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CommentsController < FeedbackController
   before_filter :get_article, only: [:create, :preview]
 

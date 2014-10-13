@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #!/usr/bin/env ruby
 
 # MovableType 3.x converter for publify by Patrick Lenz <patrick@lenz.sh>

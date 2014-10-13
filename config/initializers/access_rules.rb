@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Localization.lang = ''
 # LisiaSoft::AccessControl, permit to manage, backend, and frontend access.
 # Based on the LoginSystem of Lipisadmin

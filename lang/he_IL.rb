@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- encoding : utf-8 -*-
 Localization.define("he_IL") do |l|
   l.store "Localization.rtl", "1"
   l.store "Edit", "ערוך"

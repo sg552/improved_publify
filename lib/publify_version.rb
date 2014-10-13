@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 TYPO_MAJOR = '7'
 TYPO_SUB = '1'
 TYPO_MINOR = '0'

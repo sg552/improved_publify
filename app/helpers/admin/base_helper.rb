@@ -1,8 +1,15 @@
+# -*- encoding : utf-8 -*-
 module Admin::BaseHelper
   include ActionView::Helpers::DateHelper
 
   def tab_for(current_module)
-    content_tag(:li, link_to(_(current_module.menu_name), current_module.menu_url))
+
+    menu_name = case current_module.menu_name
+    when 'Media Library' then '上传附件(图片)'
+    else
+      current_module.menu_name
+    end
+    content_tag(:li, link_to(_(menu_name), current_module.menu_url))
   end
 
   def subtabs_for(current_module)

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddsCreatedAtToRedirects < ActiveRecord::Migration
   def self.up
     add_column :redirects, :created_at, :datetime

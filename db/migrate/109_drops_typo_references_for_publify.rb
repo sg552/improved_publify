@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class DropsTypoReferencesForPublify < ActiveRecord::Migration
 
   class Content < ActiveRecord::Base

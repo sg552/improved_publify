@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #!/usr/bin/env ruby
 
 # RSS 0.9/2.0 converter for publify by Chris Lee <clee@kde.org>

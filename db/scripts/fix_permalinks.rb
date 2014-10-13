@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #!/usr/bin/env ruby
 require File.dirname(__FILE__) + '/../../config/environment'
 Article.find(:all).each do |a|

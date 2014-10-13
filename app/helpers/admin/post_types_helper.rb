@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::PostTypesHelper
   def show_post_types_actions item
     content_tag(:div, {:class => 'action'}) do

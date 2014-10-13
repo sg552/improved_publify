@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActionWebService # :nodoc:
   module Container # :nodoc:
     module Direct # :nodoc:

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class GroupingController < ContentController
   before_filter :auto_discovery_feed, :only => [:show, :index]
   layout :theme_layout

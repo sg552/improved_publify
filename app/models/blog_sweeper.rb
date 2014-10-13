@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class BlogSweeper < ActionController::Caching::Sweeper
   observe Blog, User, Article, Page, Comment, Trackback, Note, Tag
 

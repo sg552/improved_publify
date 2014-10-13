@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class ReallyUpdateExistingArticlesWithNilOrEmptyPostType < ActiveRecord::Migration
   class Content < ActiveRecord::Base
     inheritance_column = :ignore_inheritance_column

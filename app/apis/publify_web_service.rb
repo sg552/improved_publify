@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class PublifyWebService < ActionWebService::Base
   attr_accessor :controller
 

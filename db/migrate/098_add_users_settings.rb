@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddUsersSettings < ActiveRecord::Migration
   class BareSetting < ActiveRecord::Base
     include BareMigration

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module NotesHelper
   def get_reply_context_url(reply)
     begin

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActionWebService # :nodoc:
   module TestInvoke # :nodoc:
     module InstanceMethods # :nodoc:

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class MetaWeblog::Api < ActionWebService::API::Base
   api_method :getPost,
     :expects => [ {:postid => :string}, {:username => :string}, {:password => :string} ],

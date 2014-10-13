@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 if Rails.env.in?(%(test cucumber))
   CarrierWave.configure do |config|
     config.storage = :file

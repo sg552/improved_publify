@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 plugins_root = File.join(::Rails.root.to_s, "lib")
 separator = plugins_root.include?("/") ? "/" : "\\"
 

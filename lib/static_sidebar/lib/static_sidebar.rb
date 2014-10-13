@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- encoding : utf-8 -*-
 class StaticSidebar < Sidebar
   DEFAULT_TEXT = %q{
 <ul>

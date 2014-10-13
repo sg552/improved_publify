@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'spec_helper'
 
 describe Trackback, 'With the various trackback filters loaded and DNS mocked out appropriately' do

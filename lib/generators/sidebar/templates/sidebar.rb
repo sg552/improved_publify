@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class <%= class_name %> < Sidebar
   # display_name "<%= class_name.underscore.humanize %>" # Default
   description "Describe your sidebar here"

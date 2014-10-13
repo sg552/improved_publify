@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::RedirectsController < Admin::BaseController
   def index; redirect_to :action => 'new' ; end
   def edit; new_or_edit;  end

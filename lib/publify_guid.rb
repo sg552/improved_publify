@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module PublifyGuid
   def create_guid
     self.guid rescue return true

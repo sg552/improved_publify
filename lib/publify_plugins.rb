@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module PublifyPlugins
   # Deprecated?
   def plugin_public_action(action)

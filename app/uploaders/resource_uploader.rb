@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class ResourceUploader < CarrierWave::Uploader::Base
 
   # To handle Base64 uploads...

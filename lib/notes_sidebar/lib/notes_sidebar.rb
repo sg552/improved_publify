@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class NotesSidebar < Sidebar
   description 'Displays the latest notes'
   setting :title, 'Notes'

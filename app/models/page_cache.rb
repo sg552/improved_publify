@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # FIXME: This class is not a model anymore. Move elsewhere?
 class PageCache
   def self.logger

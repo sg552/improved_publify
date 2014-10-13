@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddsContentType < ActiveRecord::Migration
   def self.up
     add_column :contents, :post_type, :string, :default => 'read'

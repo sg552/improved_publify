@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::PostTypesController < Admin::BaseController
   cache_sweeper :blog_sweeper
 

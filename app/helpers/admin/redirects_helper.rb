@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::RedirectsHelper
   def show_redirect_actions item
     content_tag(:div, {:class => 'action'}) do

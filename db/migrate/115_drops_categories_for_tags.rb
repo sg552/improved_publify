@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class DropsCategoriesForTags < ActiveRecord::Migration
   class Categorization < ActiveRecord::Base
     belongs_to :article

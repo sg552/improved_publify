@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Requires that XmlSimple is already loaded, like it is from within script/console in the latest beta Rails
 # Author: David Heinemeier Hansson, 37signals
 

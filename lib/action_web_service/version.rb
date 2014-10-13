@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActionWebService
   module VERSION #:nodoc:
     MAJOR = 2

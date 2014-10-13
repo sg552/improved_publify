@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AuthorsSidebar < Sidebar
   display_name "Authors"
   description "Displays a list of authors ordered by name with links to their articles and profile"

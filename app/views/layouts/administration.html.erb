@@ -41,6 +41,7 @@
       <ul class='nav navbar-nav'>
         <% for pm in current_user.project_modules %>
           <% if AccessControl.submenus_for(current_user.profile_label, pm.name.to_sym).size == 0 %>
+            <% puts " == #{tab_for pm}" %>
             <%= tab_for(pm) %>
           <% else %>
           <li class='dropdown'>

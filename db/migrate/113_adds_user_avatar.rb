@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddsUserAvatar < ActiveRecord::Migration
   def up
     say "Adds user avatar"

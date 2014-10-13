@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- encoding : utf-8 -*-
 Localization.define("zh_TW") do |l|
   l.store "File", "檔案"
   l.store "yes", "確認"

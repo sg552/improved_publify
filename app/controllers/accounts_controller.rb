@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AccountsController < ApplicationController
 
   before_filter :verify_config

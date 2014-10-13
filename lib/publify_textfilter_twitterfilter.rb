@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class PublifyApp
   class Textfilter
     class Twitterfilter < TextFilterPlugin::PostProcess

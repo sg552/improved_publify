@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class FixNofollowOptionsBehavior < ActiveRecord::Migration
   def self.up
     unless Blog.default.nil?

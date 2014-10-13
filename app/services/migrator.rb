@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Migrator
   def current_schema_version
     ActiveRecord::Migrator.current_version

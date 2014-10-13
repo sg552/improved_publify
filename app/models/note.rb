@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Note < Content
   require 'twitter'
   require 'json'

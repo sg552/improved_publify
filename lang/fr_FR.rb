@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #coding: utf-8
 Localization.define("fr_FR") do |l|
   l.store "no articles", "aucun article"

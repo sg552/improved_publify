@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class EmailNotify
   def self.logger
     @@logger ||= ::Rails.logger || Logger.new(STDOUT)

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::ContentHelper
   def auto_complete_result(entries, field)
     return unless entries

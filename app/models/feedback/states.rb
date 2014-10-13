@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Feedback::States
   class Base < Stateful::State
     # Give the default 'model' a more meaningful name

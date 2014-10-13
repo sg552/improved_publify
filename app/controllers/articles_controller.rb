@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class ArticlesController < ContentController
   before_filter :login_required, :only => [:preview, :preview_page]
   before_filter :auto_discovery_feed, :only => [:show, :index]

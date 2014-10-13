@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'spec_helper'
 
 describe Admin::UsersController, "rough port of the old functional test" do

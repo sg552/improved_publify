@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AmazonSidebar < Sidebar
   description \
     "Adds sidebar links to any Amazon.com books linked in the body of the page"

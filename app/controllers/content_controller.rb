@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class ContentController < ApplicationController
   class ExpiryFilter
     def before(controller)

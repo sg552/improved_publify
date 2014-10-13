@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin; end
 
 class Admin::NotesController < Admin::BaseController

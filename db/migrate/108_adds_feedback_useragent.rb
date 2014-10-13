@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddsFeedbackUseragent < ActiveRecord::Migration
   def up
     add_column :feedback, :user_agent, :string

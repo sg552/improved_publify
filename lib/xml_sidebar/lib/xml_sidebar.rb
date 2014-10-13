@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class XmlSidebar < Sidebar
   display_name "XML Syndication"
   description "RSS and Atom feeds"

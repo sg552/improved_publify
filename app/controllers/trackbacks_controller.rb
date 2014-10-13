@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class TrackbacksController < FeedbackController
   def create
     @error_message = catch(:error) do
